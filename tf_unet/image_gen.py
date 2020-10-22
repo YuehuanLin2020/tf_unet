@@ -65,7 +65,7 @@ def create_image_and_label(nx,ny, cnt = 10, r_min = 5, r_max = 50, border = 92, 
     label = np.zeros((nx, ny, 3), dtype=np.bool)
     mask = np.zeros((nx, ny), dtype=np.bool)
     for _ in range(cnt):
-        a = np.random.randint(border, nx-border)
+        a = np.random.randint(border, nx-border)  #返回一个数值
         b = np.random.randint(border, ny-border)
         r = np.random.randint(r_min, r_max)
         h = np.random.randint(1,255)
